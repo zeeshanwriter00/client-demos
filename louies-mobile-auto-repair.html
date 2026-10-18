@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Louie's Mobile Auto Repair — We Come To You | Phoenix, AZ</title>
+<style>
+  :root{
+    --ink:#0a1628; --panel:#0f2038; --card:#132a47; --line:#24446b;
+    --accent:#38bdf8; --accent2:#fbbf24; --text:#f0f6ff; --muted:#9db4d0;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;background:var(--ink);color:var(--text);line-height:1.6}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  .ribbon{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#082038;text-align:center;font-size:13px;font-weight:700;padding:6px 12px;letter-spacing:.3px}
+  header{position:sticky;top:0;z-index:50;background:rgba(10,22,40,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .logo{font-weight:800;font-size:20px;letter-spacing:.5px}
+  .logo span{color:var(--accent)}
+  nav ul{display:flex;gap:22px;list-style:none}
+  nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600}
+  nav a:hover{color:var(--accent)}
+  .btn{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#082038;font-weight:800;padding:12px 26px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;font-size:15px;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:64px 0 56px}
+  .kicker{color:var(--accent);font-weight:800;text-transform:uppercase;font-size:12px;letter-spacing:2px}
+  h1{font-size:44px;line-height:1.12;margin:12px 0 16px;font-weight:800}
+  h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--muted);font-size:17px;max-width:46ch}
+  .hero-img{border-radius:16px;box-shadow:0 24px 60px rgba(56,189,248,.18);width:100%;display:block}
+  .stats{display:flex;gap:34px;margin-top:26px}
+  .stats b{font-size:22px;display:block}
+  .stats span{color:var(--muted);font-size:13px}
+  section{padding:56px 0}
+  .sec-title{text-align:center;margin-bottom:38px}
+  .sec-title h2{font-size:30px;font-weight:800}
+  .sec-title p{color:var(--muted);margin-top:6px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+  .card h3{font-size:18px;margin:12px 0 8px}
+  .card p{color:var(--muted);font-size:14px}
+  .ico{font-size:26px}
+  .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .gal img{width:100%;border-radius:12px;display:block;border:1px solid var(--line)}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .quote{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+  .stars{color:#ffc94d;letter-spacing:2px}
+  .quote p{font-size:14px;margin:10px 0 14px;color:#d5e2f2}
+  .quote b{font-size:13px}
+  .quote span{color:var(--muted);font-size:12px}
+  form{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:32px;max-width:640px;margin:0 auto}
+  .frow{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+  input,select,textarea{width:100%;background:var(--ink);border:1px solid var(--line);color:var(--text);padding:12px 14px;border-radius:8px;font-size:14px;font-family:inherit}
+  textarea{min-height:96px;resize:vertical}
+  label{font-size:13px;color:var(--muted);display:block;margin-bottom:6px;font-weight:600}
+  footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:13px;text-align:center}
+  .wa{position:fixed;right:22px;bottom:22px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(37,211,102,.45);z-index:60;text-decoration:none;font-size:26px}
+  .wa:hover{transform:scale(1.06)}
+  @media(max-width:840px){.hero,.grid3,.gal,.quotes,.frow{grid-template-columns:1fr}.hero{padding-top:36px}h1{font-size:32px}nav ul{display:none}}
+</style>
+</head>
+<body>
+<div class="ribbon">Demo preview — a sample website built for Louie's Mobile Auto Repair. Like it? It's yours free.</div>
+<header><div class="wrap"><nav>
+  <div class="logo">Louie's <span>Mobile</span> Auto Repair</div>
+  <ul><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#book">Book</a></li></ul>
+  <a class="btn" href="#book">Book a Repair</a>
+</nav></div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <div class="kicker">Phoenix, AZ · Mobile Mechanic</div>
+      <h1>Your mechanic comes <em>to you.</em></h1>
+      <p>No tow truck. No waiting room. No time off work. Louie's brings full auto repair to your driveway or office parking — diagnostics, brakes, alternators, batteries and more. Available almost 24/7, even on holidays.</p>
+      <div class="stats">
+        <div><b>4.9★</b><span>60 Google reviews</span></div>
+        <div><b>Almost 24/7</b><span>even holidays</span></div>
+        <div><b>Save $</b><span>no shop overhead</span></div>
+      </div>
+      <div style="margin-top:28px"><a class="btn" href="#book">Get a Free Quote</a></div>
+    </div>
+    <img class="hero-img" src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/21dbaf605_generated_image.png" alt="Louie working under a truck hood in a Phoenix driveway">
+  </div>
+
+  <section id="services">
+    <div class="sec-title"><h2>What Louie Fixes</h2><p>Full-service repair at your location</p></div>
+    <div class="grid3">
+      <div class="card"><div class="ico">🔋</div><h3>Batteries &amp; Alternators</h3><p>Car won't start? Louie comes to you, tests the whole charging system and replaces on the spot.</p></div>
+      <div class="card"><div class="ico">🔧</div><h3>Diagnostics</h3><p>Check-engine light on? Honest diagnosis first — you approve the repair before any work begins.</p></div>
+      <div class="card"><div class="ico">🛑</div><h3>Brakes &amp; Suspension</h3><p>Pads, rotors, calipers, struts — done in your driveway with quality parts, at mobile prices.</p></div>
+    </div>
+  </section>
+
+  <section id="gallery" style="padding-top:0">
+    <div class="sec-title"><h2>On Location</h2><p>Real repairs, real driveways</p></div>
+    <div class="gal">
+      <img src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/dd4da28f8_generated_image.png" alt="Mechanic sliding out from under a car">
+      <img src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/81de7caef_generated_image.png" alt="Brake disc replacement in progress">
+      <img src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/21dbaf605_generated_image.png" alt="Engine repair in a driveway">
+    </div>
+  </section>
+
+  <section id="reviews" style="padding-top:0">
+    <div class="sec-title"><h2>What Customers Say</h2><p>Rated 4.9★ on Google</p></div>
+    <div class="quotes">
+      <div class="quote"><div class="stars">★★★★★</div><p>"Louie came to my office parking lot, replaced my alternator in an hour. I didn't miss a minute of work."</p><b>Angela M.</b><br><span>Phoenix, AZ</span></div>
+      <div class="quote"><div class="stars">★★★★★</div><p>"Texted him at 9pm on a holiday weekend, he answered. Battery replaced same night. Who does that?"</p><b>Derek W.</b><br><span>Tempe, AZ</span></div>
+      <div class="quote"><div class="stars">★★★★★</div><p>"Quoted me less than two shops and did the brake job in my driveway. Fair, fast, honest."</p><b>Sofia R.</b><br><span>Glendale, AZ</span></div>
+    </div>
+  </section>
+
+  <section id="book" style="padding-top:0">
+    <div class="sec-title"><h2>Book Your Repair</h2><p>Text or call — Louie answers almost 24/7</p></div>
+    <form onsubmit="event.preventDefault(); this.innerHTML='<h3 style=text-align:center;color:#38bdf8>✅ Sent! Louie will confirm shortly.</h3>'">
+      <div class="frow">
+        <div><label>Name</label><input type="text" placeholder="Your name" required></div>
+        <div><label>Phone</label><input type="tel" placeholder="(602) 555-0123" required></div>
+      </div>
+      <div class="frow">
+        <div><label>Vehicle</label><input type="text" placeholder="e.g. 2016 Honda Civic"></div>
+        <div><label>Service needed</label><select><option>Diagnostics / check engine</option><option>Battery / alternator</option><option>Brakes</option><option>Suspension</option><option>Not sure yet</option></select></div>
+      </div>
+      <div style="margin-bottom:14px"><label>Location &amp; symptoms</label><textarea placeholder="Where should Louie come? Any noises, leaks, warning lights?"></textarea></div>
+      <button class="btn" type="submit" style="width:100%">Request My Free Quote</button>
+    </form>
+  </section>
+</div>
+
+<footer>Louie's Mobile Auto Repair · Serving Phoenix &amp; the entire Valley · (657) 330-0895 / (602) 702-4725<br>Call or text — available even on holidays</footer>
+<a class="wa" href="https://wa.me/16573300895" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">💬</a>
+</body>
+</html>
