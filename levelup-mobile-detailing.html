@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LevelUp Mobile Detailing — Phoenix's Mobile Car Detailing Pros</title>
+<style>
+  :root{
+    --ink:#0b0d10; --panel:#12151a; --card:#171b21; --line:#262b33;
+    --accent:#00e0a4; --accent2:#0fd4ff; --text:#f2f5f7; --muted:#9aa4b0;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;background:var(--ink);color:var(--text);line-height:1.6}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  .ribbon{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#062018;text-align:center;font-size:13px;font-weight:700;padding:6px 12px;letter-spacing:.3px}
+  header{position:sticky;top:0;z-index:50;background:rgba(11,13,16,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .logo{font-weight:800;font-size:20px;letter-spacing:.5px}
+  .logo span{color:var(--accent)}
+  nav ul{display:flex;gap:22px;list-style:none}
+  nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600}
+  nav a:hover{color:var(--accent)}
+  .btn{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#062018;font-weight:800;padding:12px 26px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;font-size:15px;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:64px 0 56px}
+  .kicker{color:var(--accent);font-weight:800;text-transform:uppercase;font-size:12px;letter-spacing:2px}
+  h1{font-size:44px;line-height:1.12;margin:12px 0 16px;font-weight:800}
+  h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--muted);font-size:17px;max-width:46ch}
+  .hero-img{border-radius:16px;box-shadow:0 24px 60px rgba(0,224,164,.18);width:100%;display:block}
+  .stats{display:flex;gap:34px;margin-top:26px}
+  .stats b{font-size:22px;display:block}
+  .stats span{color:var(--muted);font-size:13px}
+  section{padding:56px 0}
+  .sec-title{text-align:center;margin-bottom:38px}
+  .sec-title h2{font-size:30px;font-weight:800}
+  .sec-title p{color:var(--muted);margin-top:6px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+  .card h3{font-size:18px;margin:12px 0 8px}
+  .card p{color:var(--muted);font-size:14px}
+  .price{color:var(--accent);font-weight:800;font-size:15px;margin-top:10px;display:block}
+  .ico{font-size:26px}
+  .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .gal img{width:100%;border-radius:12px;display:block;border:1px solid var(--line)}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .quote{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+  .stars{color:#ffc94d;letter-spacing:2px}
+  .quote p{font-size:14px;margin:10px 0 14px;color:#d5dbe2}
+  .quote b{font-size:13px}
+  .quote span{color:var(--muted);font-size:12px}
+  form{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:32px;max-width:640px;margin:0 auto}
+  .frow{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+  input,select,textarea{width:100%;background:var(--ink);border:1px solid var(--line);color:var(--text);padding:12px 14px;border-radius:8px;font-size:14px;font-family:inherit}
+  textarea{min-height:96px;resize:vertical}
+  label{font-size:13px;color:var(--muted);display:block;margin-bottom:6px;font-weight:600}
+  footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:13px;text-align:center}
+  .wa{position:fixed;right:22px;bottom:22px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(37,211,102,.45);z-index:60;text-decoration:none;font-size:26px}
+  .wa:hover{transform:scale(1.06)}
+  @media(max-width:840px){.hero,.grid3,.gal,.quotes,.frow{grid-template-columns:1fr}.hero{padding-top:36px}h1{font-size:32px}nav ul{display:none}}
+</style>
+</head>
+<body>
+<div class="ribbon">Demo preview — a sample website built for LevelUp Mobile Detailing. Like it? It's yours free.</div>
+<header><div class="wrap"><nav>
+  <div class="logo">Level<span>Up</span> Mobile Detailing</div>
+  <ul><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#book">Book</a></li></ul>
+  <a class="btn" href="#book">Book a Detail</a>
+</nav></div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <div class="kicker">Phoenix, AZ · We come to you</div>
+      <h1>Showroom shine, <em>at your driveway.</em></h1>
+      <p>Full-service mobile car detailing across the Valley. Interior deep cleans, paint polishing, and ceramic coatings — no lines, no waiting rooms. We bring the water, power, and expertise to your home or office.</p>
+      <div class="stats">
+        <div><b>4.7★</b><span>66 Google reviews</span></div>
+        <div><b>100%</b><span>Mobile service</span></div>
+        <div><b>7 days</b><span>Booking availability</span></div>
+      </div>
+      <div style="margin-top:28px"><a class="btn" href="#book">Get a Free Quote</a></div>
+    </div>
+    <img class="hero-img" src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/fb935bb90_generated_image.png" alt="Freshly detailed SUV in a Phoenix driveway">
+  </div>
+
+  <section id="services">
+    <div class="sec-title"><h2>Detailing Packages</h2><p>Pick a package, or ask for a custom quote</p></div>
+    <div class="grid3">
+      <div class="card"><div class="ico">🧽</div><h3>Express Detail</h3><p>Hand wash, wheel &amp; tire shine, interior vacuum, windows in &amp; out, dash wipe-down. Perfect upkeep between deep cleans.</p><span class="price">from $79</span></div>
+      <div class="card"><div class="ico">✨</div><h3>Full Interior Detail</h3><p>Steam-cleaned seats &amp; carpet, leather conditioning, pet hair removal, odor treatment, every vent and crevice brushed clean.</p><span class="price">from $149</span></div>
+      <div class="card"><div class="ico">🛡️</div><h3>Ceramic Coating</h3><p>Machine paint polish followed by a professional-grade ceramic coating. Years of gloss, water beading, and UV protection for Phoenix sun.</p><span class="price">custom quote</span></div>
+    </div>
+  </section>
+
+  <section id="gallery" style="padding-top:0">
+    <div class="sec-title"><h2>Our Work</h2><p>Results we deliver across the Valley</p></div>
+    <div class="gal">
+      <img src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/72c8a6e3c_generated_image.png" alt="Steam-cleaned leather interior">
+      <img src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/07c70cebf_generated_image.png" alt="Ceramic coating water beading">
+      <img src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/8847dbc4e_generated_image.png" alt="Machine polishing paint">
+    </div>
+  </section>
+
+  <section id="reviews" style="padding-top:0">
+    <div class="sec-title"><h2>What Customers Say</h2><p>Rated 4.7★ on Google</p></div>
+    <div class="quotes">
+      <div class="quote"><div class="stars">★★★★★</div><p>"Came to my office in north Phoenix and detailed my truck while I worked. Easiest service I've ever booked."</p><b>Dan R.</b><br><span>Phoenix, AZ</span></div>
+      <div class="quote"><div class="stars">★★★★★</div><p>"My minivan had two years of kid damage. They got crayon out of the leather. Didn't think it was possible."</p><b>Sofia M.</b><br><span>Glendale, AZ</span></div>
+      <div class="quote"><div class="stars">★★★★☆</div><p>"Great ceramic coating job — monsoon season and the water just rolls off. Scheduling was quick too."</p><b>Andre T.</b><br><span>Tempe, AZ</span></div>
+    </div>
+  </section>
+
+  <section id="book" style="padding-top:0">
+    <div class="sec-title"><h2>Book Your Detail</h2><p>We'll confirm within the hour</p></div>
+    <form onsubmit="event.preventDefault(); this.innerHTML='<h3 style=text-align:center;color:#00e0a4>✅ Request sent! We\'ll text you shortly to confirm.</h3>'">
+      <div class="frow">
+        <div><label>Name</label><input type="text" placeholder="Your name" required></div>
+        <div><label>Phone</label><input type="tel" placeholder="(602) 555-0123" required></div>
+      </div>
+      <div class="frow">
+        <div><label>Vehicle</label><input type="text" placeholder="e.g. 2021 F-150"></div>
+        <div><label>Package</label><select><option>Express Detail</option><option>Full Interior Detail</option><option>Ceramic Coating</option><option>Not sure yet</option></select></div>
+      </div>
+      <div style="margin-bottom:14px"><label>Address or area of Phoenix</label><input type="text" placeholder="Where should we come?"></div>
+      <div style="margin-bottom:18px"><label>Anything we should know?</label><textarea placeholder="Stains, pet hair, special requests..."></textarea></div>
+      <button class="btn" type="submit" style="width:100%">Request My Free Quote</button>
+    </form>
+  </section>
+</div>
+
+<footer>LevelUp Mobile Detailing LLC · Phoenix, AZ · (602) 705-1719<br>Serving the entire Valley — Phoenix, Glendale, Tempe, Scottsdale &amp; beyond</footer>
+<a class="wa" href="https://wa.me/16027051719" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">💬</a>
+</body>
+</html>
