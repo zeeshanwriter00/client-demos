@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DJS Handyman Services — Phoenix's Helping Hands | Phoenix, AZ</title>
+<style>
+  :root{--ink:#141210;--panel:#1d1915;--card:#262019;--line:#3d3327;--accent:#e8a33d;--accent2:#5bc0be;--text:#f5efe6;--muted:#b3a48c;}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;background:var(--ink);color:var(--text);line-height:1.6}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  .ribbon{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#1a1510;text-align:center;font-size:13px;font-weight:700;padding:6px 12px;letter-spacing:.3px}
+  header{position:sticky;top:0;z-index:50;background:rgba(20,18,16,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .logo{font-weight:800;font-size:20px;letter-spacing:.5px}.logo span{color:var(--accent)}
+  nav ul{display:flex;gap:22px;list-style:none}
+  nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600}nav a:hover{color:var(--accent)}
+  .btn{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#1a1510;font-weight:800;padding:12px 26px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;font-size:15px;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:64px 0 56px}
+  .kicker{color:var(--accent);font-weight:800;text-transform:uppercase;font-size:12px;letter-spacing:2px}
+  h1{font-size:44px;line-height:1.12;margin:12px 0 16px;font-weight:800}
+  h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--muted);font-size:17px;max-width:46ch}
+  .hero-img{border-radius:16px;box-shadow:0 24px 60px rgba(0,0,0,.35);width:100%;display:block}
+  .stats{display:flex;gap:34px;margin-top:26px}.stats b{font-size:22px;display:block}.stats span{color:var(--muted);font-size:13px}
+  section{padding:56px 0}.sec-title{text-align:center;margin-bottom:38px}
+  .sec-title h2{font-size:30px;font-weight:800}.sec-title p{color:var(--muted);margin-top:6px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+  .card h3{font-size:18px;margin:12px 0 8px}.card p{color:var(--muted);font-size:14px}
+  .ico{font-size:26px}
+  .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .gal img,.gal .tile{width:100%;border-radius:12px;display:flex;border:1px solid var(--line);min-height:200px;align-items:center;justify-content:center;text-align:center}
+  .gal img{object-fit:cover}
+  .tile{background:linear-gradient(135deg,var(--panel),var(--card));flex-direction:column;gap:8px;padding:20px}
+  .tile b{font-size:17px}.tile span{color:var(--muted);font-size:13px}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .quote{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+  .quote p{font-size:14.5px;font-style:italic;color:var(--text)}
+  .quote .who{margin-top:14px;font-weight:700;font-size:13px;color:var(--accent)}
+  .stars{color:var(--accent2);letter-spacing:2px}
+  .book{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  form{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:640px;margin:0 auto}
+  input,select,textarea{background:var(--ink);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:12px 14px;font-size:14px;font-family:inherit;width:100%}
+  textarea{grid-column:1/-1;min-height:90px;resize:vertical}
+  form .btn{grid-column:1/-1;justify-self:center;margin-top:6px}
+  .wa-float{position:fixed;right:22px;bottom:22px;z-index:60;background:#25D366;color:#fff;font-weight:800;padding:13px 20px;border-radius:999px;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.4);font-size:14px;display:flex;gap:8px;align-items:center}
+  footer{padding:34px 0;color:var(--muted);font-size:13px;text-align:center}
+  @media(max-width:860px){.hero{grid-template-columns:1fr;padding:40px 0}h1{font-size:34px}.grid3,.quotes,.gal{grid-template-columns:1fr}nav ul{display:none}form{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="ribbon">INSURED · HUSBAND-AND-WIFE TEAM · PHOENIX METRO</div>
+<header><div class="wrap"><nav>
+  <div class="logo">DJS Handyman<span>.</span></div>
+  <ul><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#book">Book</a></li></ul>
+  <a class="btn" href="https://wa.me/14805778458?text=Hi%21%20I%27d%20like%20to%20get%20a%20quote%20from%20DJS%20Handyman.">Get a Free Quote</a>
+</nav></div></header>
+
+<div class="wrap"><div class="hero">
+  <div>
+    <div class="kicker">Handyman &amp; Home Repair · Phoenix</div>
+    <h1>Your to-do list, <em>done right</em></h1>
+    <p>Doors, drywall, fixtures, furniture, and all those small jobs that pile up. DJS Handyman is a local, insured husband-and-wife team serving Phoenix and the surrounding cities — friendly, tidy, and on time.</p>
+    <div class="stats">
+      <div><b>Insured</b><span>For your peace of mind</span></div>
+      <div><b>Local</b><span>Phoenix-based team</span></div>
+      <div><b>Free</b><span>Quotes</span></div>
+    </div>
+  </div>
+  <img class="hero-img" src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/75371ebaa_generated_image.png" alt="DJS Handyman Services">
+</div></div>
+
+<section id="services"><div class="wrap">
+  <div class="sec-title"><h2>What We Do</h2><p>From one quick fix to a full punch list — quality work, fair prices.</p></div>
+  <div class="grid3">
+    <div class="card"><div class="ico">🚪</div><h3>Door Installation &amp; Repair</h3><p>Interior and exterior doors hung, aligned, and sealed properly — no more squeaks or drafts.</p></div>
+    <div class="card"><div class="ico">🔨</div><h3>Drywall &amp; Painting</h3><p>Patches, texture matching, and crisp repaints that make damage disappear.</p></div>
+    <div class="card"><div class="ico">💡</div><h3>Fixture Installation</h3><p>Lights, faucets, towel bars, shelves, TVs — mounted and wired neatly.</p></div>
+    <div class="card"><div class="ico">🛠️</div><h3>General Home Repairs</h3><p>That wobbly banister, stuck drawer, or running toilet — fixed for good.</p></div>
+    <div class="card"><div class="ico">📦</div><h3>Furniture &amp; Assembly</h3><p>Flat-pack furniture, cribs, desks — assembled quickly and sturdily.</p></div>
+    <div class="card"><div class="ico">🌵</div><h3>Yard &amp; Odd Jobs</h3><p>Small outdoor projects, gate fixes, touch-ups, and haul-away help.</p></div>
+  </div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <div class="sec-title"><h2>Our Work</h2><p>Careful work, clean finish.</p></div>
+  <div class="gal">
+    <img src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/75371ebaa_generated_image.png" alt="DJS Handyman Services work">
+    <div class="tile"><b>Respect Your Home</b><span>Shoes off, drop cloths down, everything left tidy.</span></div>
+    <div class="tile"><b>One Team, One Standard</b><span>The same friendly faces on every job — no rotating crews.</span></div>
+  </div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+  <div class="sec-title"><h2>What Customers Say</h2><p>What neighbors say.</p></div>
+  <div class="quotes">
+    <div class="quote"><div class="stars">★★★★★</div><p>A true husband-and-wife team that treats your home like their own. Reliable, thorough and genuinely kind.</p><div class="who">— Phoenix neighbor</div></div>
+    <div class="quote"><div class="stars">★★★★★</div><p>Showed up on time, quoted fairly, and the work speaks for itself. We'll be calling them again.</p><div class="who">— Facebook recommendation</div></div>
+    <div class="quote"><div class="stars">★★★★★</div><p>Finally, a handyman who answers the phone AND does great work.</p><div class="who">— East Valley customer</div></div>
+  </div>
+</div></section>
+
+<section id="book" class="book"><div class="wrap">
+  <div class="sec-title"><h2>Book Your Project</h2><p>Send us your list — we'll get back with a free, honest quote.</p></div>
+  <form onsubmit="event.preventDefault();window.open('https://wa.me/14805778458?text=Hi%21%20I%20found%20DJS%20Handyman%20online%20and%20would%20like%20a%20quote.','_blank')">
+    <input required placeholder="Your name">
+    <input required placeholder="Phone number">
+    <select><option>Door installation</option><option>Drywall/painting</option><option>Fixture install</option><option>Something else</option></select>
+    <input placeholder="Preferred date">
+    <textarea placeholder="Tell us what you need..."></textarea>
+    <button class="btn" type="submit">Request Appointment</button>
+  </form>
+</div></section>
+
+<a class="wa-float" href="https://wa.me/14805778458?text=Hi%21%20I%27d%20like%20to%20get%20a%20quote%20from%20DJS%20Handyman.">💬 WhatsApp Us</a>
+<footer><div class="wrap">DJS Handyman Services · Phoenix, AZ · Call/Text (480) 577-8458 · djshandymanwork@gmail.com<br>© 2026 DJS Handyman Services. All rights reserved.</div></footer>
+</body></html>
