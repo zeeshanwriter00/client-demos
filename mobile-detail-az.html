@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Detail AZ — We Bring The Shine To You | Phoenix Metro, AZ</title>
+<style>
+  :root{--ink:#0d0d0f;--panel:#151519;--card:#1c1c21;--line:#2c2c34;--accent:#ef4444;--accent2:#f8fafc;--text:#f4f4f6;--muted:#a1a1ab;}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;background:var(--ink);color:var(--text);line-height:1.6}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  .ribbon{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#1a0505;text-align:center;font-size:13px;font-weight:700;padding:6px 12px;letter-spacing:.3px}
+  header{position:sticky;top:0;z-index:50;background:rgba(13,13,15,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .logo{font-weight:800;font-size:20px;letter-spacing:.5px}.logo span{color:var(--accent)}
+  nav ul{display:flex;gap:22px;list-style:none}
+  nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600}nav a:hover{color:var(--accent)}
+  .btn{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#1a0505;font-weight:800;padding:12px 26px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;font-size:15px;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:64px 0 56px}
+  .kicker{color:var(--accent);font-weight:800;text-transform:uppercase;font-size:12px;letter-spacing:2px}
+  h1{font-size:44px;line-height:1.12;margin:12px 0 16px;font-weight:800}
+  h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--muted);font-size:17px;max-width:46ch}
+  .hero-img{border-radius:16px;box-shadow:0 24px 60px rgba(0,0,0,.35);width:100%;display:block}
+  .stats{display:flex;gap:34px;margin-top:26px}.stats b{font-size:22px;display:block}.stats span{color:var(--muted);font-size:13px}
+  section{padding:56px 0}.sec-title{text-align:center;margin-bottom:38px}
+  .sec-title h2{font-size:30px;font-weight:800}.sec-title p{color:var(--muted);margin-top:6px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+  .card h3{font-size:18px;margin:12px 0 8px}.card p{color:var(--muted);font-size:14px}
+  .ico{font-size:26px}
+  .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .gal img,.gal .tile{width:100%;border-radius:12px;display:flex;border:1px solid var(--line);min-height:200px;align-items:center;justify-content:center;text-align:center}
+  .gal img{object-fit:cover}
+  .tile{background:linear-gradient(135deg,var(--panel),var(--card));flex-direction:column;gap:8px;padding:20px}
+  .tile b{font-size:17px}.tile span{color:var(--muted);font-size:13px}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .quote{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+  .quote p{font-size:14.5px;font-style:italic;color:var(--text)}
+  .quote .who{margin-top:14px;font-weight:700;font-size:13px;color:var(--accent)}
+  .stars{color:var(--accent2);letter-spacing:2px}
+  .book{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  form{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:640px;margin:0 auto}
+  input,select,textarea{background:var(--ink);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:12px 14px;font-size:14px;font-family:inherit;width:100%}
+  textarea{grid-column:1/-1;min-height:90px;resize:vertical}
+  form .btn{grid-column:1/-1;justify-self:center;margin-top:6px}
+  .wa-float{position:fixed;right:22px;bottom:22px;z-index:60;background:#25D366;color:#fff;font-weight:800;padding:13px 20px;border-radius:999px;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.4);font-size:14px;display:flex;gap:8px;align-items:center}
+  footer{padding:34px 0;color:var(--muted);font-size:13px;text-align:center}
+  @media(max-width:860px){.hero{grid-template-columns:1fr;padding:40px 0}h1{font-size:34px}.grid3,.quotes,.gal{grid-template-columns:1fr}nav ul{display:none}form{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="ribbon">MOBILE AUTO DETAILING · WE COME TO YOU · BOOKED BY APPOINTMENT</div>
+<header><div class="wrap"><nav>
+  <div class="logo">Mobile Detail AZ<span>.</span></div>
+  <ul><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#book">Book</a></li></ul>
+  <a class="btn" href="https://wa.me/16027300887?text=Hi%21%20I%27d%20like%20to%20book%20a%20mobile%20detail%20with%20Mobile%20Detail%20AZ.">Book a Detail</a>
+</nav></div></header>
+
+<div class="wrap"><div class="hero">
+  <div>
+    <div class="kicker">Mobile Detailing · Phoenix Metro</div>
+    <h1>Showroom shine, <em>in your driveway</em></h1>
+    <p>Full-service mobile detailing across the Phoenix metro. Interior deep-cleans, paint correction, ceramic coatings — Mobile Detail AZ brings everything to your home or office.</p>
+    <div class="stats">
+      <div><b>Full-Service</b><span>Interior &amp; exterior</span></div>
+      <div><b>Premium</b><span>Products &amp; pads</span></div>
+      <div><b>Your Spot</b><span>Home or office</span></div>
+    </div>
+  </div>
+  <img class="hero-img" src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/487c3be6b_generated_image.png" alt="Mobile Detail AZ">
+</div></div>
+
+<section id="services"><div class="wrap">
+  <div class="sec-title"><h2>What We Do</h2><p>Paint-safe methods and showroom-level results, every visit.</p></div>
+  <div class="grid3">
+    <div class="card"><div class="ico">🚗</div><h3>Full Interior + Exterior</h3><p>Deep-cleaned cabin, hand wash, clay, sealant, and dressing — the complete reset.</p></div>
+    <div class="card"><div class="ico">💎</div><h3>Ceramic Coating</h3><p>Months of hydrophobic gloss and real protection from Arizona sun and dust.</p></div>
+    <div class="card"><div class="ico">🪞</div><h3>Paint Correction</h3><p>Swirl and scratch removal that brings back depth and mirror shine.</p></div>
+    <div class="card"><div class="ico">💡</div><h3>Headlight Restoration</h3><p>Yellowed, hazy lenses restored to clear — better light, safer nights.</p></div>
+    <div class="card"><div class="ico">🧼</div><h3>Interior Deep Clean</h3><p>Steam, extraction, and conditioning for seats, carpets, and trim.</p></div>
+    <div class="card"><div class="ico">🚐</div><h3>Fleet &amp; Multiple Cars</h3><p>Dealer and small-fleet rates — we come to your lot.</p></div>
+  </div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <div class="sec-title"><h2>Our Work</h2><p>The difference is in the details.</p></div>
+  <div class="gal">
+    <img src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/487c3be6b_generated_image.png" alt="Mobile Detail AZ work">
+    <div class="tile"><b>Arizona-Proof Shine</b><span>UV protection against desert sun and dust storms.</span></div>
+    <div class="tile"><b>Before / After</b><span>From dusty daily driver to show-ready — same day.</span></div>
+  </div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+  <div class="sec-title"><h2>What Customers Say</h2><p>What drivers say.</p></div>
+  <div class="quotes">
+    <div class="quote"><div class="stars">★★★★★</div><p>My SUV looked better than the day I bought it. And I never left the house.</p><div class="who">— Phoenix driver</div></div>
+    <div class="quote"><div class="stars">★★★★★</div><p>On time, meticulous, and the interior extraction got stains out I'd given up on.</p><div class="who">— Repeat customer</div></div>
+    <div class="quote"><div class="stars">★★★★★</div><p>The ceramic coating still beads months later. Worth every dollar.</p><div class="who">— Happy client</div></div>
+  </div>
+</div></section>
+
+<section id="book" class="book"><div class="wrap">
+  <div class="sec-title"><h2>Book Your Detail</h2><p>Pick a package and a spot — we come to you with everything.</p></div>
+  <form onsubmit="event.preventDefault();window.open('https://wa.me/16027300887?text=Hi%21%20I%20found%20Mobile%20Detail%20AZ%20online%20and%20would%20like%20to%20book%20a%20detail.','_blank')">
+    <input required placeholder="Your name">
+    <input required placeholder="Phone number">
+    <select><option>Full detail</option><option>Interior only</option><option>Ceramic coating</option><option>Headlight restoration</option></select>
+    <input placeholder="Preferred date">
+    <textarea placeholder="Tell us what you need..."></textarea>
+    <button class="btn" type="submit">Request Appointment</button>
+  </form>
+</div></section>
+
+<a class="wa-float" href="https://wa.me/16027300887?text=Hi%21%20I%27d%20like%20to%20book%20a%20mobile%20detail%20with%20Mobile%20Detail%20AZ.">💬 WhatsApp Us</a>
+<footer><div class="wrap">Mobile Detail AZ · Phoenix Metro, AZ · Call/Text (602) 730-0887<br>© 2026 Mobile Detail AZ. All rights reserved.</div></footer>
+</body></html>
