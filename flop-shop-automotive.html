@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flop Shop Automotive — Phoenix Auto Repair & Subaru Specialists</title>
+<style>
+  :root{
+    --ink:#0c0d0f; --panel:#15171b; --card:#191c21; --line:#2a2e35;
+    --accent:#ff5a1f; --accent2:#ffb02e; --text:#f3f5f7; --muted:#9aa3ae;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;background:var(--ink);color:var(--text);line-height:1.6}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  .ribbon{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#26130a;text-align:center;font-size:13px;font-weight:700;padding:6px 12px;letter-spacing:.3px}
+  header{position:sticky;top:0;z-index:50;background:rgba(12,13,15,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .logo{font-weight:800;font-size:20px;letter-spacing:.5px}
+  .logo span{color:var(--accent)}
+  nav ul{display:flex;gap:22px;list-style:none}
+  nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600}
+  nav a:hover{color:var(--accent)}
+  .btn{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#26130a;font-weight:800;padding:12px 26px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;font-size:15px;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:64px 0 56px}
+  .kicker{color:var(--accent);font-weight:800;text-transform:uppercase;font-size:12px;letter-spacing:2px}
+  h1{font-size:44px;line-height:1.12;margin:12px 0 16px;font-weight:800}
+  h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--muted);font-size:17px;max-width:46ch}
+  .hero-img{border-radius:16px;box-shadow:0 24px 60px rgba(255,90,31,.18);width:100%;display:block}
+  .stats{display:flex;gap:34px;margin-top:26px}
+  .stats b{font-size:22px;display:block}
+  .stats span{color:var(--muted);font-size:13px}
+  section{padding:56px 0}
+  .sec-title{text-align:center;margin-bottom:38px}
+  .sec-title h2{font-size:30px;font-weight:800}
+  .sec-title p{color:var(--muted);margin-top:6px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+  .card h3{font-size:18px;margin:12px 0 8px}
+  .card p{color:var(--muted);font-size:14px}
+  .ico{font-size:26px}
+  .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .gal img{width:100%;border-radius:12px;display:block;border:1px solid var(--line)}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .quote{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+  .stars{color:#ffc94d;letter-spacing:2px}
+  .quote p{font-size:14px;margin:10px 0 14px;color:#d5dbe2}
+  .quote b{font-size:13px}
+  .quote span{color:var(--muted);font-size:12px}
+  form{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:32px;max-width:640px;margin:0 auto}
+  .frow{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+  input,select,textarea{width:100%;background:var(--ink);border:1px solid var(--line);color:var(--text);padding:12px 14px;border-radius:8px;font-size:14px;font-family:inherit}
+  textarea{min-height:96px;resize:vertical}
+  label{font-size:13px;color:var(--muted);display:block;margin-bottom:6px;font-weight:600}
+  footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:13px;text-align:center}
+  .wa{position:fixed;right:22px;bottom:22px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(37,211,102,.45);z-index:60;text-decoration:none;font-size:26px}
+  .wa:hover{transform:scale(1.06)}
+  @media(max-width:840px){.hero,.grid3,.gal,.quotes,.frow{grid-template-columns:1fr}.hero{padding-top:36px}h1{font-size:32px}nav ul{display:none}}
+</style>
+</head>
+<body>
+<div class="ribbon">Demo preview — a sample website built for Flop Shop Automotive. Like it? It's yours free.</div>
+<header><div class="wrap"><nav>
+  <div class="logo">Flop<span>Shop</span> Automotive</div>
+  <ul><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#book">Book</a></li></ul>
+  <a class="btn" href="#book">Book a Service</a>
+</nav></div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <div class="kicker">Phoenix, AZ · Subaru &amp; All-Makes Repair</div>
+      <h1>Honest repairs, <em>no runaround.</em></h1>
+      <p>Independent auto repair in the heart of Phoenix. From diagnostics and brakes to full Subaru service, we tell you what your car needs — and what it doesn't. Straight answers, fair prices, work done right the first time.</p>
+      <div class="stats">
+        <div><b>4.8★</b><span>73 Google reviews</span></div>
+        <div><b>All makes</b><span>+ Subaru specialists</span></div>
+        <div><b>Free</b><span>diagnosis on repairs</span></div>
+      </div>
+      <div style="margin-top:28px"><a class="btn" href="#book">Get a Free Estimate</a></div>
+    </div>
+    <img class="hero-img" src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/e0d52ccdf_generated_image.png" alt="Subaru on a lift inside Flop Shop's clean Phoenix garage">
+  </div>
+
+  <section id="services">
+    <div class="sec-title"><h2>What We Fix</h2><p>Everyday repairs to specialty Subaru work</p></div>
+    <div class="grid3">
+      <div class="card"><div class="ico">🔧</div><h3>Diagnostics &amp; Check-Engine</h3><p>Modern scanner-based diagnostics plus real mechanic experience. We find the actual problem instead of throwing parts at it.</p></div>
+      <div class="card"><div class="ico">🛑</div><h3>Brakes &amp; Suspension</h3><p>Pads, rotors, calipers, struts and alignments. Smooth, quiet, safe — with quality parts, not the cheapest ones we can find.</p></div>
+      <div class="card"><div class="ico">🚙</div><h3>Subaru Specialists</h3><p>Head gaskets, timing belts, diffs and everything that makes a Subaru a Subaru. The shop Phoenix Subaru owners keep coming back to.</p></div>
+    </div>
+  </section>
+
+  <section id="gallery" style="padding-top:0">
+    <div class="sec-title"><h2>In the Shop</h2><p>A look at our work</p></div>
+    <div class="gal">
+      <img src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/f30463af2_generated_image.png" alt="Mechanic running engine diagnostics">
+      <img src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/293d6b94a_generated_image.png" alt="Brake disc and caliper installation">
+      <img src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/e0d52ccdf_generated_image.png" alt="Car on lift in the shop">
+    </div>
+  </section>
+
+  <section id="reviews" style="padding-top:0">
+    <div class="sec-title"><h2>What Customers Say</h2><p>Rated 4.8★ on Google</p></div>
+    <div class="quotes">
+      <div class="quote"><div class="stars">★★★★★</div><p>"They diagnosed in 20 minutes what another shop wanted $900 to 'explore'. Fixed it same day for a fraction of that."</p><b>Marcus D.</b><br><span>Phoenix, AZ</span></div>
+      <div class="quote"><div class="stars">★★★★★</div><p>"My WRX has been to three shops in the Valley. Flop Shop is the only one that actually understands Subarus."</p><b>Jenna K.</b><br><span>Scottsdale, AZ</span></div>
+      <div class="quote"><div class="stars">★★★★★</div><p>"No upsells, no made-up problems, just honest work. My whole family brings their cars here now."</p><b>Rick S.</b><br><span>Tempe, AZ</span></div>
+    </div>
+  </section>
+
+  <section id="book" style="padding-top:0">
+    <div class="sec-title"><h2>Book Your Repair</h2><p>We'll confirm your slot the same day</p></div>
+    <form onsubmit="event.preventDefault(); this.innerHTML='<h3 style=text-align:center;color:#ff5a1f>✅ Request sent! We\'ll call you shortly to confirm.</h3>'">
+      <div class="frow">
+        <div><label>Name</label><input type="text" placeholder="Your name" required></div>
+        <div><label>Phone</label><input type="tel" placeholder="(602) 555-0123" required></div>
+      </div>
+      <div class="frow">
+        <div><label>Vehicle</label><input type="text" placeholder="e.g. 2018 Subaru Outback"></div>
+        <div><label>Service needed</label><select><option>Diagnostics / check engine</option><option>Brakes</option><option>Suspension / alignment</option><option>Scheduled maintenance</option><option>Not sure yet</option></select></div>
+      </div>
+      <div style="margin-bottom:14px"><label>Symptoms or anything we should know?</label><textarea placeholder="Noises, leaks, warning lights..."></textarea></div>
+      <button class="btn" type="submit" style="width:100%">Request My Free Estimate</button>
+    </form>
+  </section>
+</div>
+
+<footer>Flop Shop Automotive · 4019 N 10th St, Phoenix, AZ 85014 · (623) 332-6854<br>Serving Phoenix, Scottsdale, Tempe &amp; the whole Valley</footer>
+<a class="wa" href="https://wa.me/16233326854" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">💬</a>
+</body>
+</html>
