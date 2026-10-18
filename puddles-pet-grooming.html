@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puddles Pet Grooming — Fresh Trims, Happy Pets | Phoenix, AZ</title>
+<style>
+  :root{--ink:#1c1230;--panel:#271845;--card:#322055;--line:#4a3577;--accent:#e879f9;--accent2:#38bdf8;--text:#f6efff;--muted:#c3aede;}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;background:var(--ink);color:var(--text);line-height:1.6}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  .ribbon{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#1c1230;text-align:center;font-size:13px;font-weight:700;padding:6px 12px;letter-spacing:.3px}
+  header{position:sticky;top:0;z-index:50;background:rgba(28,18,48,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .logo{font-weight:800;font-size:20px;letter-spacing:.5px}.logo span{color:var(--accent)}
+  nav ul{display:flex;gap:22px;list-style:none}
+  nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600}nav a:hover{color:var(--accent)}
+  .btn{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#1c1230;font-weight:800;padding:12px 26px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;font-size:15px;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:64px 0 56px}
+  .kicker{color:var(--accent);font-weight:800;text-transform:uppercase;font-size:12px;letter-spacing:2px}
+  h1{font-size:44px;line-height:1.12;margin:12px 0 16px;font-weight:800}
+  h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--muted);font-size:17px;max-width:46ch}
+  .hero-img{border-radius:16px;box-shadow:0 24px 60px rgba(0,0,0,.35);width:100%;display:block}
+  .stats{display:flex;gap:34px;margin-top:26px}.stats b{font-size:22px;display:block}.stats span{color:var(--muted);font-size:13px}
+  section{padding:56px 0}.sec-title{text-align:center;margin-bottom:38px}
+  .sec-title h2{font-size:30px;font-weight:800}.sec-title p{color:var(--muted);margin-top:6px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+  .card h3{font-size:18px;margin:12px 0 8px}.card p{color:var(--muted);font-size:14px}
+  .ico{font-size:26px}
+  .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .gal img,.gal .tile{width:100%;border-radius:12px;display:flex;border:1px solid var(--line);min-height:200px;align-items:center;justify-content:center;text-align:center}
+  .gal img{object-fit:cover}
+  .tile{background:linear-gradient(135deg,var(--panel),var(--card));flex-direction:column;gap:8px;padding:20px}
+  .tile b{font-size:17px}.tile span{color:var(--muted);font-size:13px}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .quote{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+  .quote p{font-size:14.5px;font-style:italic;color:var(--text)}
+  .quote .who{margin-top:14px;font-weight:700;font-size:13px;color:var(--accent)}
+  .stars{color:var(--accent2);letter-spacing:2px}
+  .book{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  form{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:640px;margin:0 auto}
+  input,select,textarea{background:var(--ink);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:12px 14px;font-size:14px;font-family:inherit;width:100%}
+  textarea{grid-column:1/-1;min-height:90px;resize:vertical}
+  form .btn{grid-column:1/-1;justify-self:center;margin-top:6px}
+  .wa-float{position:fixed;right:22px;bottom:22px;z-index:60;background:#25D366;color:#fff;font-weight:800;padding:13px 20px;border-radius:999px;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.4);font-size:14px;display:flex;gap:8px;align-items:center}
+  footer{padding:34px 0;color:var(--muted);font-size:13px;text-align:center}
+  @media(max-width:860px){.hero{grid-template-columns:1fr;padding:40px 0}h1{font-size:34px}.grid3,.quotes,.gal{grid-template-columns:1fr}nav ul{display:none}form{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="ribbon">DOG &amp; CAT GROOMING · NORTH PHOENIX · GENTLE &amp; PATIENT</div>
+<header><div class="wrap"><nav>
+  <div class="logo">Puddles<span>.</span></div>
+  <ul><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#book">Book</a></li></ul>
+  <a class="btn" href="mailto:puddlespetgrooming@gmail.com">Book an Appointment</a>
+</nav></div></header>
+
+<div class="wrap"><div class="hero">
+  <div>
+    <div class="kicker">Pet Grooming · 43rd Ave, Phoenix</div>
+    <h1>A fresh cut for your <em>best friend</em></h1>
+    <p>Puddles Pet Grooming has been pampering Phoenix pets for years. Baths, full grooms, de-shedding and nail care — with gentle, patient handling for even the most nervous pups and cats.</p>
+    <div class="stats">
+      <div><b>Dogs &amp; Cats</b><span>All sizes welcome</span></div>
+      <div><b>Gentle</b><span>Patient handling</span></div>
+      <div><b>Walk-ins</b><span>Call ahead</span></div>
+    </div>
+  </div>
+  <img class="hero-img" src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/69e865238_generated_image.png" alt="Puddles Pet Grooming">
+</div></div>
+
+<section id="services"><div class="wrap">
+  <div class="sec-title"><h2>What We Do</h2><p>Everything from a quick bath-and-brush to a full styled groom.</p></div>
+  <div class="grid3">
+    <div class="card"><div class="ico">✂️</div><h3>Full Grooms</h3><p>Bath, haircut, blow-dry, nail trim, and ear cleaning — styled to breed standard or your preference.</p></div>
+    <div class="card"><div class="ico">🛁</div><h3>Baths &amp; Blowouts</h3><p>Deep-clean shampoo, conditioner, and a fluffy finish that lasts.</p></div>
+    <div class="card"><div class="ico">💅</div><h3>Nail Trimming</h3><p>Quick, careful trims to keep walking comfy and floors scratch-free.</p></div>
+    <div class="card"><div class="ico">🌀</div><h3>De-shedding Treatment</h3><p>Undercoat removal that dramatically cuts the hair around the house.</p></div>
+    <div class="card"><div class="ico">🐱</div><h3>Cat Grooming</h3><p>Patient, quiet sessions for feline friends — nails, de-matting, and tidy trims.</p></div>
+    <div class="card"><div class="ico">👂</div><h3>Teeth &amp; Ear Care</h3><p>Cleaning add-ons that keep your pet healthy between vet visits.</p></div>
+  </div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <div class="sec-title"><h2>Our Work</h2><p>Clean, calm, and full of treats.</p></div>
+  <div class="gal">
+    <img src="https://media.base44.com/images/public/6ad33ad10b168c41ee61e2a1/69e865238_generated_image.png" alt="Puddles Pet Grooming work">
+    <div class="tile"><b>Nervous Pets Welcome</b><span>Slow introductions, breaks, and lots of praise.</span></div>
+    <div class="tile"><b>Local &amp; Trusted</b><span>A neighborhood shop pet owners keep coming back to.</span></div>
+  </div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+  <div class="sec-title"><h2>What Customers Say</h2><p>From local pet parents.</p></div>
+  <div class="quotes">
+    <div class="quote"><div class="stars">★★★★★</div><p>They treat every animal like their own. My dog used to panic at groomers — now she pulls me toward the door.</p><div class="who">— Phoenix pet parent</div></div>
+    <div class="quote"><div class="stars">★★★★★</div><p>Great groom every single time, at a fair price. The before-and-after is unbelievable.</p><div class="who">— Happy customer</div></div>
+    <div class="quote"><div class="stars">★★★★★</div><p>Gentle, patient, and clearly love animals. Exactly what you want in a groomer.</p><div class="who">— Long-time client</div></div>
+  </div>
+</div></section>
+
+<section id="book" class="book"><div class="wrap">
+  <div class="sec-title"><h2>Book Your Pet's Groom</h2><p>Tell us about your pet and preferred date — we'll confirm quickly.</p></div>
+  <form onsubmit="event.preventDefault();window.open('mailto:puddlespetgrooming@gmail.com?subject=Appointment%20Request%20—%20Puddles%20Pet%20Grooming','_blank')">
+    <input required placeholder="Your name">
+    <input required placeholder="Phone number">
+    <select><option>Full groom</option><option>Bath & blowout</option><option>Nails only</option><option>Cat grooming</option></select>
+    <input placeholder="Preferred date">
+    <textarea placeholder="Tell us what you need..."></textarea>
+    <button class="btn" type="submit">Request Appointment</button>
+  </form>
+</div></section>
+
+
+<footer><div class="wrap">Puddles Pet Grooming · Phoenix, AZ · puddlespetgrooming@gmail.com · 8925 N 43rd Ave, Phoenix<br>© 2026 Puddles Pet Grooming. All rights reserved.</div></footer>
+</body></html>
